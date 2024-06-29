@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .dropdown{
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+            
+            list-style-type: none;
+        }
+        a{
+            display: block;
+            width: 250px;
+            background-color: green;
+            color: #fff;
+            padding-top: 10px ;
+            padding-bottom: 10px ;
+            padding-left: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        a:hover{
+            color: goldenrod;
+        }
+        .product-list{
+            list-style-type: none;
+            display: none;
+        }
+        .dropdown li:nth-child(3):hover .product-list{
+            display: block;
+        }
+        .container{
+            padding: 15px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+<ul class="dropdown">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Products</a>
+        <ul class="product-list">
+            <li><a href="">Engineering</a></li>
+            <li><a href="">Telecom</a></li>
+            <li> <a href="">Energy</a></li>
+            <li> <a href="">Finance</a></li>
+            <li><a href="">Consultancy</a></li>
+        </ul>
+    </li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contacts</a></li>
+</ul>
+
+</div>
+    
+</body>
+</html>
